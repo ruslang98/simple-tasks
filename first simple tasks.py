@@ -27,7 +27,11 @@ matrix = [
     [7, 8, 9],
     [10, 11, 12]
 ]
-
+for row in matrix:
+    print(row)
+for row in matrix:
+    for column in row:
+        print(column)
 # 8.Создать список любых объектов, в цикле напечатать в консоль: объект и его индекс
 objects = ['Moscow', 'Czech', 'Europe', 48]
 for i in enumerate(objects, start=1):

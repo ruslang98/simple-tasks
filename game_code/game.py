@@ -19,12 +19,10 @@ MOVES = {
 
 
 def shuffle_field():
-    """
-    This method is used to create a field at the very start of the game.
-    :return: list with 16 randomly shuffled tiles,
-    one of which is a empty space.
-    """
-    pass
+    field = [number for number in range(0, 16)]
+    field.append(EMPTY_MARK)
+    random.shuffle(field)
+    return field
 
 
 def print_field(field):
