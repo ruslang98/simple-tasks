@@ -29,9 +29,6 @@ matrix = [
 ]
 for row in matrix:
     print(row)
-for row in matrix:
-    for column in row:
-        print(column)
 # 8.Создать список любых объектов, в цикле напечатать в консоль: объект и его индекс
 objects = ['Moscow', 'Czech', 'Europe', 48]
 for i in enumerate(objects, start=1):

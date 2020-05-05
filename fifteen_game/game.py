@@ -26,12 +26,8 @@ def shuffle_field():
 
 
 def print_field(field):
-    """
-    This method prints field to user.
-    :param field: current field state to be printed.
-    :return: None
-    """
-    pass
+    for i in range(0, 16, 4):
+        print(field[i:i+4])
 
 
 def is_game_finished(field):
@@ -72,7 +68,7 @@ def main():
     It also calls other methods.
     :return: None
     """
-    pass
+    print_field(shuffle_field())
 
 
 if __name__ == '__main__':
