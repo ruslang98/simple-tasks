@@ -1,15 +1,8 @@
 # -*- coding: utf-8 -*-
-
-# `random` module is used to shuffle field, see§:
-# https://docs.python.org/3/library/random.html#random.shuffle
 import random
 
-
-# Empty tile, there's only one empty cell on a field:
 EMPTY_MARK = 'x'
 
-# Dictionary of possible moves if a form of: 
-# key -> delta to move the empty tile on a field.
 MOVES = {
     'w': -4,
     's': 4,
@@ -31,12 +24,9 @@ def print_field(field):
 
 
 def is_game_finished(field):
-    """
-    This method checks if the game is finished.
-    :param field: current field state.
-    :return: True if the game is finished, False otherwise.
-    """
-    pass
+    correct_field = [i for i in range(0, 17)]
+    correct_field[-1] = EMPTY_MARK
+    return True if field == correct_field else False
 
 
 def perform_move(field, key):
